@@ -9,19 +9,18 @@ First repo on GitHub dedicated to experimenting with markdown
 * To
 * Try
 
+
+An unordered list needs a blank line after or the leading isn't consistent.
+
 1. Unordered lists (see above)
 2. Ordered lists (see this)
+3. Code snippets (wrap with ` to indicate)
+4. Hyperlinks
+5. Blocks
+6. Tables
+7. Task Lists
 
-What if I want it to start with 5?
-
-5. Altered numbered list
-6. Actually restart at 1 if it is a new section
-
-11. Or perhaps continue if not
-12. Which is it?
-13. It's continue if not...with *something* between the two lists, they restart.
-
-`WHERE facility_type_cd = 'POTW'` is not what you think!
+What if I want it to start with 5? You cannot. It always starts with 1. and goes continuous
 
 Examples stolen from [Markdown Basics - User Documentation](https://help.github.com/articles/markdown-basics/).
 
@@ -31,7 +30,11 @@ formatted in a block
 instead of 3 paragraphs?
 ```
 
-GitHub only, you ~~cannot~~ can use strikethrough text.
+GitHub only, you ~~cannot~~ can use strikethrough text. 
+Strikethrough works in the VSCode preview too.
+
+## Code snippets
+`WHERE facility_type_cd = 'POTW'` is not what you think!
 
 Stealing an example of ruby code
 
@@ -41,6 +44,7 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
+##Tables
 Tables? Do they have to have at least 3 dashes for the line?
 
 Facility ID | Facility Name | Inspected? 
